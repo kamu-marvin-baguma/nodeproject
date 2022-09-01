@@ -1,0 +1,88 @@
+//- <!DOCTYPE html>
+//- <html lang="en">
+//- <head>
+//-     <meta charset="UTF-8">
+//-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//-     <title>Document</title>
+//- </head>
+//- <body>
+//-     <h1>hello marvin</h1>
+//-    <div class="remark">
+<p>
+  You are logged in as
+  user@example.com
+</p>
+
+//- <nav id="navbar-default">
+//-   <div class="container-fluid">
+//-     <h1 class="navbar-header">My Website!</h1>
+//-   </div>
+//- </nav>
+//- <ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="/page-1">Page 1</a></li>
+  <li><a href="/page-2">Page 2</a></li>
+//- </ul>
+<input class="search" type="text" name="search" placeholder="Enter a search term..."/>
+
+//- </body>
+
+//- </html>
+
+
+
+
+
+
+doctype html
+html(lang="en")
+    head
+        title Hello, World 
+    body
+        h1 Hello Javascript
+        div.remark
+            p Pug rocks!!
+        nav#navbar-default 
+            -container-fluid
+                h1.navbar-header My website 
+        ul
+            li 
+                a(href="/") Home 
+            li 
+                a(href="/page-1") page 1
+        input.search(
+            type="text"
+            name="search"
+            placeholder="Enter a search term..."
+            ) 
+            p
+                | You are looged in as 
+                    user 
+            p
+                lorem msnshandbxcb dwbxcb awdbcbadhbSNJWEbwb dw
+            - const name = "Jim"
+            p Hi #{name}
+            p= 'Two to the power of ten is: ' + 2**10
+            - const employees = ['Angela', 'Jim', 'Nilson', 'Simone']
+            ul
+            each employee in employees
+                li= employee
+
+            -
+                const employee = {
+                    firstName: 'James',
+                    lastName: 'Hibbard',
+                    extn: '12345'
+            }
+
+            #employee
+                    p= `${employee.firstName} ${employee.lastName}`
+                    p Extension:
+                        if employee.extn
+                            =employee.extn
+                    else
+                        | n/a
+
+                    
+

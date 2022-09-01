@@ -1,0 +1,9 @@
+const data = new workerModel({
+        name: "Marvin",
+        field: "Coffee",
+        age: 30,
+        salary: 50000,
+    })
+    data.save()
+    app.listen(process.env.port || 3000)//should always be the last line of code
+console.log("server running on port" + (process.env.port || 3000))
